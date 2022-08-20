@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Togaar - تجار</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .mySwiper2 {
+        height: 80%;
+        width: 100%;
+      }
+      @media (max-width: 767px) {
+        .mySwiper2 {
+          height: 300px;
+        }
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: var(--main-color-alt) !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="app">
+        <p>App is Aviable</p>
+        <a href="#"><img src="assets/images/google-play.png" alt="" /></a>
+      </div>
+      <div class="container">
+        <nav>
+          <h2 class="icon">Togaar - تـجــار</h2>
+          <ul>
+            <li>
+              <a href="index-six.html">
+                الشكاوى والمقترحات <i class="fa-solid fa-message"></i
+              ></a>
+            </li>
+            <li>
+              <a href="index.html"
+                >المنتجات <i class="fa-solid fa-box-archive"></i
+              ></a>
+            </li>
+            <li id="first">
+              <i class="fa-solid fa-caret-down"></i> جميع الفئات
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </li>
+          </ul>
+          <!-- Mega Menu -->
+          <ul id="mega">
+            <li>
+              <a href="index-two.html"
+                >ملابـس رجالـي <i class="fas fa-angle-double-left"></i
+              ></a>
+            </li>
+            <li>
+              <a href="index-three.html"
+                >ملابـس حريمـي <i class="fas fa-angle-double-left"></i
+              ></a>
+            </li>
+            <li>
+              <a href="index-four.html"
+                >ملابـس أطفـال <i class="fas fa-angle-double-left"></i
+              ></a>
+            </li>
+            <li>
+              <a href="index-five.html"
+                >جمـيـع الملابـس<i class="fas fa-angle-double-left"></i
+              ></a>
+            </li>
+
+            <li style="margin-top: 50px">
+              <a href="index-six.html">
+                الشكاوى والمقترحات <i class="fa-solid fa-message"></i
+              ></a>
+            </li>
+            <li>
+              <a href="index.html"
+                >جمـيـع المنتجات<i class="fa-solid fa-box-archive"></i
+              ></a>
+            </li>
+          </ul>
+          <!-- burger Menu -->
+          <div id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Section Man -->
+    <section class="man">
+      <div class="container">
+        <div class="navigations">
+          <ul>
+            <li>
+              <a href="index-five.html" class="hover"> ملابـس</a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><i class="fas fa-angle-left"></i> المنتجات</a
+              >
+            </li>
+          </ul>
+        </div>
+        <section class="product-preview">
+          <div class="product-gallery">
+            <div
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+              class="swiper mySwiper2"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/product_1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_8.jpg" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/product_1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/product_8.jpg" />
+                </div>
+              </div>
+            </div>
+            <button class="download-button">
+              تحميل جميع صور المنتج الي جهازك
+            </button>
+          </div>
+          <div class="product-text">
+            <div class="product-basic-info">
+              <p class="product-name">
+                عرض 3 تيشيرت صيفى Vintage + عرض 3 بنطلون ميلتون صيفى
+              </p>
+              <p class="product-id"><span>EGY020181VP05</span> : كود المنتج</p>
+              <div class="profit-info-section">
+                <p class="currency">جنيه مصري</p>
+                <p class="product-profit">35</p>
+                <p class="profit-text">: الربح من اجمالي السعر</p>
+                <p class="currency">جنيه مصري</p>
+                <p class="product-price">300</p>
+              </div>
+            </div>
+            <div class="product-actions">
+              <hr class="hr" />
+              <div class="size-variants">
+                <p>: المقاسات</p>
+                <button>L</button>
+                <button>XL</button>
+                <button>XXL</button>
+              </div>
+              <hr class="hr" />
+              <p class="product-availability">
+                : حالةالمنتج
+                <span
+                  style="color: rgb(61, 187, 84)"
+                  class="product-availability-text"
+                  >متوفر</span
+                >
+              </p>
+              <div class="product-ordering-actions">
+                <div class="number-of-items-container">
+                  <button class="order-now-button action-button">
+                    اطلب الان
+                  </button>
+                  <button class="action-button order-add-button">
+                    اضف الي العربة <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <div class="btn-counter">
+                    <button class="items-count-change-button">-</button>
+                    <p class="number-of-items">1</p>
+                    <button class="items-count-change-button">+</button>
+                  </div>
+                </div>
+              </div>
+              <hr class="hr" />
+              <div class="social-sharing-buttons">
+                <div class="favorite-and-share-section">
+                  <a href="#" class="share-button whatsapp-button">
+                    <i hidden="true" class="fa fa-whatsapp"></i>
+                    <span>واتـس اب</span>
+                  </a>
+                  <a href="#" class="share-button facebook-button">
+                    <i hidden="true" class="fa fa-facebook"></i>
+                    <span style="margin-right: 5px">فيسبوك</span>
+                  </a>
+                  <p class="share-text">: مشاركة عبر</p>
+                </div>
+                <button class="add-to-catalog-button">
+                  اضف الي الكتالوج
+                  <i hidden="true" class="fa fa-heart ng-star-inserted"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="product-additional-info">
+          <div class="additionalInfoContainer">
+            <div class="tabGroup__additionalInfo">
+              <button
+                class="tabItem tab__productDescription tabItem--selected ng-star-inserted"
+              >
+                شرح المنتج
+              </button>
+              <button
+                class="tabItem tab__productSpecifications ng-star-inserted"
+              >
+                تفاصيل المنتج
+              </button>
+            </div>
+            <div class="displayedAdditionalInfoContainer">
+              <ul class="productDescription">
+                <li class="ng-star-inserted">
+                  عرض الصيف والمصيف 😍، البس براحتك و اتشيك مع عرض 3 تيشيرت صيفى
+                  Vintage + عرض 3 بنطلون ميلتون صيفى ، جمعنا لك اكتر من قطعه
+                  عشان نوفر لك و نسهل عليك، 6 قطع في عرض واحد بسعر ميتعوضش 😉💕
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Man -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2 class="icon">Togaar - تـجــار</h2>
+            <p>
+              تجار بتدعم كل اللي بيفكر يبني تجارته الإلكترونية بخدمات كتير. أولا
+              منصة تتيح للتجار إدارة ومتابعة الطلبيات، اقتراح وتوفير مجموعة
+              كبيرة من المنتجات، خدمات شحن للمنتجات وتوصيل للعميل النهائي
+              والتحصيل منهم، تحويل فوري لقيمة المبيعات للتجار، بالإضافة
+              لاستشارات تسويقية تساعد التجار في بيع منتجاتهم من خلال الإنترنت
+              واقتراح منتجات تناسبهم وتناسب عملائهم المستهدفين
+            </p>
+          </div>
+          <div class="social-box">
+            <h3>تابعنا على مواقع التواصل الإجتماعي</h3>
+            <ul>
+              <li>
+                <a href="#"><img src="assets/images/facebook.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/images/Whatsapp.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/images/linkedin.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/images/insta.png" alt="" /></a>
+              </li>
+            </ul>
+            <div class="contact">
+              <h3>تواصل معنا من خلال البريد الإلكتروني</h3>
+              <span><a href="#">info@togaar.com</a></span> : البريد الإلكتروني
+            </div>
+          </div>
+        </div>
+        <div class="copyrigth">
+          <a href="#">جميع الحقوق محفوظة لشركة تجار © 2022</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
