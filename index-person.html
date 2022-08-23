@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Togaar - تجار</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="app">
+        <p>App is Aviable</p>
+        <a href="#"><img src="assets/images/google-play.png" alt="" /></a>
+      </div>
+      <div class="container">
+        <nav>
+          <ul class="icon-user">
+            <li>
+              <span>0</span>
+              <a href="index-cart.html"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li>
+              <span>0</span>
+              <a href="index-catalog.html"
+                ><i class="fa-regular fa-heart"></i
+              ></a>
+            </li>
+            <li>
+              <h2 class="icon">Togaar - تـجــار</h2>
+            </li>
+          </ul>
+          <div class="ul-peranr-and-user-welcome">
+            <button class="user-account">
+              <span>
+                <i class="fa-solid fa-caret-down"></i>
+                <p class="user-welcome-text">
+                  <bdi dir="auto">Yehia Gamal</bdi>، اهلاً
+                </p>
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <!-- sidbar -->
+              <ul class="sidebar-2">
+                <li>
+                  <a href="index-account.html">
+                    <p>حسابي</p>
+                    <i class="fa-solid fa-user"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="index-price.html">
+                    <p>المحفظة</p>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="index-person.html">
+                    <p>الطلبات</p>
+                    <i class="fa-solid fa-box-open"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="index-login.html">
+                    <p>تسجيل الخروج</p>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                  </a>
+                </li>
+              </ul>
+            </button>
+            <ul class="ul-perant">
+              <li>
+                <a href="index-six.html">
+                  الشكاوى والمقترحات <i class="fa-solid fa-message"></i
+                ></a>
+              </li>
+              <li>
+                <a href="index.html"
+                  >المنتجات <i class="fa-solid fa-box-archive"></i
+                ></a>
+              </li>
+              <li id="first">
+                <i class="fa-solid fa-caret-down"></i> جميع الفئات
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </li>
+            </ul>
+            <!-- burger Menu -->
+            <div id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- Mega Menu -->
+          <ul id="mega">
+            <li>
+              <a href="index-two.html"
+                >ملابـس رجالـي <i class="fas fa-angle-double-left"></i
+              ></a>
+            </li>
+            <li>
+              <a href="index-three.html"
+                >ملابـس حريمـي <i class="fas fa-angle-double-left"></i
+              ></a>
+            </li>
+            <li>
+              <a href="index-four.html"
+                >ملابـس أطفـال <i class="fas fa-angle-double-left"></i
+              ></a>
+            </li>
+            <li>
+              <a href="index-five.html"
+                >جمـيـع الملابـس<i class="fas fa-angle-double-left"></i
+              ></a>
+            </li>
+
+            <li style="margin-top: 30px">
+              <a href="index.html"
+                >جمـيـع المنتجات<i class="fa-solid fa-box-archive"></i
+              ></a>
+            </li>
+            <li>
+              <a href="index-six.html">
+                الشكاوى والمقترحات <i class="fa-solid fa-message"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Page Person -->
+    <section class="person">
+      <div class="container">
+        <div class="content">
+          <div class="person-page">
+            <h2>الطلبات</h2>
+            <div class="order-filters-page">
+              <form action="">
+                <div class="order-filters-search">
+                  <div class="mat-form-field-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                      type="search"
+                      formcontrolname="searchKey"
+                      id=""
+                      placeholder="البحث باستخدام رقم الهاتف"
+                    />
+                  </div>
+                  <div class="mat-form-field-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                      type="search"
+                      formcontrolname="searchKey"
+                      id=""
+                      placeholder="البحث باستخدام اسم العميل"
+                    />
+                  </div>
+                  <div class="mat-form-field-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                      type="search"
+                      formcontrolname="searchKey"
+                      id=""
+                      placeholder="البحث برقم الطلب"
+                    />
+                  </div>
+                </div>
+                <div class="order-filters-row">
+                  <button type="submit">بحث</button>
+                  <select
+                    class="order-info"
+                    name=""
+                    id=""
+                    aria-placeholder="حالة الطلب"
+                  >
+                    <option value="تم تأكيد الطلب">حالة الطلب</option>
+                    <option value="تم تأكيد الطلب">تم تأكيد الطلب</option>
+                    <option value="في انتظار شركة الشحن">
+                      في انتظار شركة الشحن
+                    </option>
+                    <option value="تأخير في الاوردر">تأخير في الاوردر</option>
+                    <option value="التوصيل قيد التقدم">
+                      التوصيل قيد التقدم
+                    </option>
+                    <option value="تم التوصيل">تم التوصيل</option>
+                    <option value="تم تعليق الطلب">تم تعليق الطلب</option>
+                    <option value="تم إلغاء الطلب">تم إلغاء الطلب</option>
+                    <option value="التاجر ألغى الطلب">التاجر ألغى الطلب</option>
+                    <option value="تم تعليق التوصيل ">تم تعليق التوصيل</option>
+                    <option value="الإسترجاع قيد التقدم">
+                      الإسترجاع قيد التقدم
+                    </option>
+                    <option value="تم الإسترجاع">تم الإسترجاع</option>
+                    <option value="الاستبدال قيد التقدم">
+                      الاستبدال قيد التقدم
+                    </option>
+                    <option value="تم الاستبدال">تم الاستبدال</option>
+                    <option value="الاستكمال قيد التنفيذ">
+                      الاستكمال قيد التنفيذ
+                    </option>
+                    <option value="تم الاستكمال">تم الاستكمال</option>
+                    <option value="الاسترجاع قيد التنفيذ">
+                      الاسترجاع قيد التنفيذ
+                    </option>
+                    <option value="تم الاسترجاع">تم الاسترجاع</option>
+                    <option value="في انتظار شركة الشحن">
+                      في انتظار شركة الشحن
+                    </option>
+                    <option value="التوصيل قيد التقدم">
+                      التوصيل قيد التقدم
+                    </option>
+                    <option value="تم التوصيل">تم التوصيل</option>
+                    <option value="تم قبول طلب الاستبدال">
+                      تم قبول طلب الاستبدال
+                    </option>
+                    <option value="تم استلام المنتج المرتجع">
+                      تم استلام المنتج المرتجع
+                    </option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="sidebar">
+            <a href="index-account.html">
+            <button style="border: none" class="sidebar-button">
+              <p class="sidebar-text">حسابي</p>
+              <i class="fa-solid fa-user"></i>
+            </a>
+            </button>
+            <button class="sidebar-button"><a href="index-person.html">
+              <p class="sidebar-text">المحفظة</p>
+              <i class="fa-regular fa-bookmark"></i>
+            </a>
+            </button>
+            <button class="sidebar-button"><a href="index-person.html">
+              <p class="sidebar-text">الطلبات</p>
+              <i class="fa-solid fa-box-open"></i>
+            </a>
+            </button>
+            <button class="sidebar-button">
+              <a href="index-login.html">
+              <p class="sidebar-text">تسجيل الخروج</p>
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+            </button>
+          </div>
+        </div>
+        <div class="content-2">
+          <div class="person-order-info">
+            <div class="order-number"><span>42165</span>: رقم الطلب</div>
+            <div class="order-total-info">
+              <div class="order-history">
+                <span>16-07-2022</span>: تاريخ الطلب
+              </div>
+              <div class="order-praice">جنيه<span>150</span>: سعر الشراء</div>
+              <div class="order-praice-sale">جنيه<span>50</span>: العمولة</div>
+            </div>
+            <div class="select-info-order"></div>
+            <div class="order-action">
+              <ul>
+                <li id="data-order">
+                  <i class="fa-solid fa-caret-down"></i> تفاصيل الطلب
+                </li>
+                <li>
+                  <a href="#"
+                    >ارسال رسالة <i class="fa-solid fa-comment"></i
+                  ></a>
+                </li>
+                <li><a href="#">الغاء الطلب</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="person-info-data">
+            <div class="personal-data">
+              <div class="person-name"><span>Shref</span>: أسـم العميل</div>
+              <div class="person-name">
+                <span>01154869616</span>: رقم الهاتف
+              </div>
+              <div class="person-name">
+                <span>Egypt - Cairo - ElMaady</span> : العنوان
+              </div>
+            </div>
+            <div class="product-info-name">
+              <div class="img">
+                <img src="assets/images/product_1.jpg" alt="" />
+              </div>
+              <div class="text">
+                <div class="product-name"><span></span>: أسـم المنتج</div>
+                <div class="product-count"><span></span>: عـدد القطع</div>
+                <div class="product-price-text"><span>$50</span>: السعر</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Page Person -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2 class="icon">Togaar - تـجــار</h2>
+            <p>
+              تجار بتدعم كل اللي بيفكر يبني تجارته الإلكترونية بخدمات كتير. أولا
+              منصة تتيح للتجار إدارة ومتابعة الطلبيات، اقتراح وتوفير مجموعة
+              كبيرة من المنتجات، خدمات شحن للمنتجات وتوصيل للعميل النهائي
+              والتحصيل منهم، تحويل فوري لقيمة المبيعات للتجار، بالإضافة
+              لاستشارات تسويقية تساعد التجار في بيع منتجاتهم من خلال الإنترنت
+              واقتراح منتجات تناسبهم وتناسب عملائهم المستهدفين
+            </p>
+          </div>
+          <div class="social-box">
+            <h3>تابعنا على مواقع التواصل الإجتماعي</h3>
+            <ul>
+              <li>
+                <a href="#"><img src="assets/images/facebook.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/images/Whatsapp.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/images/linkedin.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/images/insta.png" alt="" /></a>
+              </li>
+            </ul>
+            <div class="contact">
+              <h3>تواصل معنا من خلال البريد الإلكتروني</h3>
+              <span><a href="#">info@togaar.com</a></span> : البريد الإلكتروني
+            </div>
+          </div>
+        </div>
+        <div class="copyrigth">
+          <a href="#">جميع الحقوق محفوظة لشركة تجار © 2022</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

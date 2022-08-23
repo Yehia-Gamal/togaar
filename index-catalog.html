@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Start Header -->
@@ -135,52 +140,99 @@
       </div>
     </header>
     <!-- End Header -->
-
-    <!-- Start Section Man -->
-    <section class="six">
+    <section class="catalog">
       <div class="container">
-        <h3 class="page-tite-2">الشكاوي و المقترحات</h3>
+        <div class="catalog-perant">
+          <div class="title-catalog-page">
+            <p>كتالوج المنتجات</p>
+            <span>(1 منتج)</span>
+          </div>
+          <div class="catalog-section">
+            <div class="catalog-section-header">
+              <div class="text">
+                <div class="select-all">
+                  <div class="remove">
+                    <button class="remove-select">حذف المحدد</button>
+                  </div>
+                  <label for="select">اختر الكل</label>
+                  <input type="checkbox" name="" id="select" />
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">توافر المنتج</th>
+                    <th scope="col">الربح</th>
+                    <th scope="col" class="th-price">السعر</th>
+                    <th scope="col" style="text-align: right">المنتج</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="add-to-car-catalog">
+                        <button>
+                          اضف الي العربة <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                        <button>أطلب الان</button>
+                      </div>
+                    </td>
+
+                    <td>
+                      <p class="p-catalog-avil">متوفر</p>
+                    </td>
+
+                    <td>
+                      <p class="product-profit-p">35</p>
+                    </td>
+
+                    <td>
+                      <div class="catalog-price-product">
+                        <button><i class="fa-solid fa-pen"></i></button>
+                        <p class="product-price-p">300</p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="img-and-name-catalog">
+                        <div class="name-and-category">
+                          <a href="#"
+                            ><p>
+                              عرض اربع قطع بنطلون بنجالين ( اسود - جملي - فضي -
+                              زيتي )
+                            </p>
+                            <p class="product-original-price">
+                              السعر الاصلي <span>جنيه مصري 300</span>
+                            </p>
+                            <p class="product-variants">
+                              <span class="size-variant">المقاس: XL</span>
+                            </p>
+                          </a>
+                        </div>
+                        <a href="#"
+                          ><img src="assets/images/man.jpg" alt=""
+                        /></a>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="product-actions-catalog">
+                        <input type="checkbox" name="" id="" />
+                        <button>X</button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
-    <section class="complaint-form">
-      <div class="container">
-        <h3 class="page-tite-primary">من فضلك قول شكوتك و هنحلها لك</h3>
-        <h3 class="page-tite-secondary">اختر ما تريد اخبار منصة تجار به</h3>
-        <form action="">
-          <div class="form-group form-control">
-            <label for="">من فضلك اختر سبب الشكوي</label>
-            <select name="" id="">
-              <option value="مستوى الخدمة">مستوى الخدمة</option>
-              <option value="مستوى خدمة الشحن">مستوى خدمة الشحن</option>
-              <option value="المنتجات">المنتجات</option>
-              <option value="خدمات و امكانيات الموقع">
-                خدمات و امكانيات الموقع
-              </option>
-              <option value="خدمة العملاء">خدمة العملاء</option>
-              <option value="صفحة المحفظة">صفحة المحفظة</option>
-              <option value="صفحة الطلبات">صفحة الطلبات</option>
-              <option value="خدمة اللايف شات">خدمة اللايف شات</option>
-              <option value="اخرى">اخرى</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="">من فضلك اكتب تفاصيل اكثر</label>
-            <textarea
-              name=""
-              type="text"
-              id=""
-              class=".form-control"
-            ></textarea>
-          </div>
-          <div class="btn-send">
-            <button type="submit">إرسال</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- End Section Man -->
-
     <!-- Start Footer -->
     <footer>
       <div class="container">
@@ -225,6 +277,7 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- JavaScript File -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>

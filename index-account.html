@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Start Header -->
@@ -136,50 +141,132 @@
     </header>
     <!-- End Header -->
 
-    <!-- Start Section Man -->
-    <section class="six">
+    <!-- Start Page Person -->
+    <section class="account">
       <div class="container">
-        <h3 class="page-tite-2">الشكاوي و المقترحات</h3>
+        <div class="content">
+          <div class="account-filters-page">
+            <div class="account-perant">
+              <div class="header-title-account">
+                <h2>اعدادات حسابي</h2>
+                <div class="info-person">
+                  <p>المعلومات الشخصية</p>
+                  <i class="fa-solid fa-user"></i>
+                  <i class="fa-solid fa-gear"></i>
+                </div>
+              </div>
+              <form action="">
+                <div class="form-group">
+                  <label for="">الاسم</label>
+                  <input type="text">
+                </div>
+                <div class="form-group">
+                  <label for="">رقم الهاتف</label>
+                  <input type="number">
+                </div>
+                <div class="form-group">
+                  <label for="">البريد</label>
+                  <input type="email">
+                </div>
+                <div class="form-group">
+                  <label for="">رقم محفظة الكاش</label>
+                  <input type="number">
+                </div>
+                <div class="form-group">
+                  <label for="">كلمة المرور</label>
+                  <input type="password">
+                </div>
+                <div class="form-group">
+                  <label for=""> تأكيد كلمة المرور</label>
+                  <input type="password">
+                </div>
+              </form>
+              <div class="mony">
+                <div class="header-title-account-mony">
+                  <h2>المحفظة</h2>
+                  <div class="info-person">
+                    <p>انت في اول الطريق الي تحقيق حلمك و تقدر دلوقتي تشوف المنتجات وتبدأ تبيع اللي يناسبك و تحقق ارباح و نجاحات كتير</p>
+                </div>
+              </div>
+              <div class="content">
+                <div class="card">
+                  <div class="box">
+                    <h2 class="mony-title">رصيد قابل للصرف</h2>
+                    <div class="box-mony">
+                      <span class="mony-price">500</span>
+                      <span class="mony-text">جنيه</span>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <h2 class="mony-title">رصيد معلق</h2>
+                    <div class="box-mony">
+                      <span class="mony-price">200</span>
+                      <span class="mony-text">جنيه</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-title-account">
+                  <h2>معاملات السحب</h2>
+                  <div class="info-person">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+                </div>
+              </div>
+              <div class="table-mony">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>المبلغ</th>
+                      <th>طريقة الدفع</th>
+                      <th>رقم الهاتف</th>
+                      <th>الحاله</th>
+                      <th>التاريخ</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>500</td>
+                      <td>فودافون كاش</td>
+                      <td>01154869616</td>
+                      <td>
+                        تمت
+                      </td>
+                      <td>16/10/2022</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar">
+            <a href="index-account.html">
+            <button style="border: none" class="sidebar-button">
+              <p class="sidebar-text">حسابي</p>
+              <i class="fa-solid fa-user"></i>
+            </a>
+            </button>
+            <button class="sidebar-button"><a href="index-price.html">
+              <p class="sidebar-text">المحفظة</p>
+              <i class="fa-regular fa-bookmark"></i>
+            </a>
+            </button>
+            <button class="sidebar-button"><a href="index-person.html">
+              <p class="sidebar-text">الطلبات</p>
+              <i class="fa-solid fa-box-open"></i>
+            </a>
+            </button>
+            <button class="sidebar-button">
+              <a href="index-login.html">
+              <p class="sidebar-text">تسجيل الخروج</p>
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
-
-    <section class="complaint-form">
-      <div class="container">
-        <h3 class="page-tite-primary">من فضلك قول شكوتك و هنحلها لك</h3>
-        <h3 class="page-tite-secondary">اختر ما تريد اخبار منصة تجار به</h3>
-        <form action="">
-          <div class="form-group form-control">
-            <label for="">من فضلك اختر سبب الشكوي</label>
-            <select name="" id="">
-              <option value="مستوى الخدمة">مستوى الخدمة</option>
-              <option value="مستوى خدمة الشحن">مستوى خدمة الشحن</option>
-              <option value="المنتجات">المنتجات</option>
-              <option value="خدمات و امكانيات الموقع">
-                خدمات و امكانيات الموقع
-              </option>
-              <option value="خدمة العملاء">خدمة العملاء</option>
-              <option value="صفحة المحفظة">صفحة المحفظة</option>
-              <option value="صفحة الطلبات">صفحة الطلبات</option>
-              <option value="خدمة اللايف شات">خدمة اللايف شات</option>
-              <option value="اخرى">اخرى</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="">من فضلك اكتب تفاصيل اكثر</label>
-            <textarea
-              name=""
-              type="text"
-              id=""
-              class=".form-control"
-            ></textarea>
-          </div>
-          <div class="btn-send">
-            <button type="submit">إرسال</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- End Section Man -->
+    <!-- End Page Person -->
 
     <!-- Start Footer -->
     <footer>
