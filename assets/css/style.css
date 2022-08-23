@@ -393,6 +393,8 @@ textarea {
   justify-content: center;
 }
 .btn-send button {
+  opacity: 1;
+  cursor: pointer;
   width: 140px;
   padding: 10px 0;
   border: 0;
@@ -400,6 +402,10 @@ textarea {
   background-color: #29b6ab;
   margin: 0 5px;
   color: #fff;
+  transition: var(--transition);
+}
+.btn-send button:hover {
+  opacity: .7;
 }
 /* End Sections Six */
 
@@ -971,6 +977,7 @@ span.product-availability-text {
   text-align: right;
 }
 .btn {
+  opacity: 1;
   background-color: #29b6ab;
   border-radius: 30px;
   border-color: transparent;
@@ -979,6 +986,10 @@ span.product-availability-text {
   padding: 8px 0px;
   width: 170px;
   cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  opacity: .7;
 }
 .btn span {
   color: #fff;
@@ -1000,15 +1011,19 @@ span.product-availability-text {
   justify-content: space-between;
   align-items: center;
 }
-.product-add #hert{
-  opacity: .7;
+.product-add #hert {
+  opacity: 0.7;
   color: #aaa;
   font-size: 25px;
   margin-right: 10px;
   cursor: pointer;
 }
 .product-add #hert:hover {
-  opacity: .5;
+  opacity: 0.5;
+}
+.color-btn {
+  color: red!important;
+  font-size: 100px;
 }
 /* End Global swiper product */
 
@@ -1260,10 +1275,10 @@ section.person {
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
-  width: 270px;
+  width: 230px;
   border-radius: 1.25em;
   border: 1px solid #ddd;
-  height: 320px;
+  height: 280px;
 }
 .sidebar .sidebar-button {
   border: none;
@@ -1276,7 +1291,7 @@ section.person {
 }
 .sidebar .sidebar-button a {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 .sidebar .sidebar-button:hover .sidebar-text,
@@ -1284,16 +1299,15 @@ section.person {
   color: var(--main-color);
 }
 .sidebar .sidebar-button i {
-  font-size: 30px;
+  font-size: 25px;
   padding: 5px;
-  color: #5f5f5f;
+  color: var(--main-color);
   transition: var(--transition);
 }
 .sidebar .sidebar-button .sidebar-text {
   font-weight: 700;
   color: #aaa;
-  letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 17px;
   transition: var(--transition);
   margin: 10px 20px;
 }
@@ -1585,7 +1599,7 @@ td {
 .product-actions-catalog {
   height: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: space-around;
 }
@@ -1848,10 +1862,10 @@ section.account {
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
-  width: 270px;
+  width: 230px;
   border-radius: 1.25em;
   border: 1px solid #ddd;
-  height: 320px;
+  height: 280px;
   margin-left: 20px;
 }
 .header-title-account {
@@ -1993,7 +2007,7 @@ span.mony-text {
   position: absolute;
   top: 150px;
   right: 0px;
-  width: 220px;
+  width: 250px;
   height: 320px;
   border-radius: 10px;
   background-color: #f5f5f5;

@@ -5,18 +5,19 @@
 //   orderInof.classList.toggle("active");
 // };
 
-let hert = document.getElementById("hert");
+// let hert = document.querySelector("#hert");
 
-hert.onclick = () => {
-  hert.classList.toggle("fa-solid");
-  if (hert.style.color === "red") {
-    hert.style.color = "#aaa";
-  } else if (hert.style.color === "#aaa") {
-    hert.style.color = "red";
-  } else {
-    hert.style.color = "red";
-  }
-};
+// hert.onclick = () => {
+//   hert.classList.toggle("fa-solid");
+//   if (hert.style.color === "red") {
+//     hert.style.color = "#aaa";
+//   } else if (hert.style.color === "#aaa") {
+//     hert.style.color = "red";
+//   } else {
+//     hert.style.color = "red";
+//   }
+// };
+
 
 let user = document.querySelector(".user-account");
 let sidebar = document.querySelector(".sidebar-2");
