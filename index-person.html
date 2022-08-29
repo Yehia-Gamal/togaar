@@ -22,64 +22,77 @@
     <!-- Start Header -->
     <header>
       <div class="app">
-        <p>App is Aviable</p>
-        <a href="#"><img src="assets/images/google-play.png" alt="" /></a>
+        <div class="">
+          <p><a href="#"> ملاحظة الشحن<i class="fa-solid fa-file-lines"></i></a></p>
+          <p><a href="#">كورس ازاي تبدأ مع تجار <i class="fa-brands fa-youtube"></i></a></p>
+        </div>
+        <a href="#"><img src="assets/images/google-play.png"/><p>دلوقتي مع تطبيق تجار الجديد تقدر تستمتع بتجربة أسهل في أي وقت وأي مكان</p></a>
       </div>
       <div class="container">
         <nav>
           <ul class="icon-user">
             <li>
+              <button class="user-account">
+                <span>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <p class="user-welcome-text">
+                    <bdi dir="auto">Yehia Gamal</bdi>، اهلاً
+                  </p>
+                  <i class="fa-solid fa-user"></i>
+                </span>
+                <!-- sidbar -->
+                <ul class="sidebar-2">
+                  <li>
+                    <a href="index-account.html">
+                      <p>حسابي</p>
+                      <i class="fa-solid fa-user"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-price.html">
+                      <p>المحفظة</p>
+                      <i class="fa-regular fa-bookmark"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-person.html">
+                      <p>الطلبات</p>
+                      <i class="fa-solid fa-box-open"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-login.html">
+                      <p>تسجيل الخروج</p>
+                      <i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
+                  </li>
+                </ul>
+              </button>
+            </li>
+            <li>
               <span>0</span>
               <a href="index-cart.html"
                 ><i class="fa-solid fa-cart-shopping"></i
-              ></a>
-            </li>
+              >
+            </a>
+            <span>0</span>
+            <a href="index-catalog.html"
+              ><i class="fa-regular fa-heart"></i
+            ></a>
+            </li>            
             <li>
-              <span>0</span>
-              <a href="index-catalog.html"
-                ><i class="fa-regular fa-heart"></i
-              ></a>
+              <form action="">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="search" name="" id="" placeholder="ما الذي تبحث عنه؟">
+              </form>
             </li>
-            <li>
-              <a href="index.html"> <h2 class="icon">Togaar - تـجــار</h2></a></li>
+            <li><a href="index.html"> <h2 class="icon">Togaar - تـجــار</h2></a></li>
           </ul>
           <div class="ul-peranr-and-user-welcome">
-            <button class="user-account">
-              <span>
-                <i class="fa-solid fa-caret-down"></i>
-                <p class="user-welcome-text">
-                  <bdi dir="auto">Yehia Gamal</bdi>، اهلاً
-                </p>
-                <i class="fa-solid fa-user"></i>
-              </span>
-              <!-- sidbar -->
-              <ul class="sidebar-2">
-                <li>
-                  <a href="index-account.html">
-                    <p>حسابي</p>
-                    <i class="fa-solid fa-user"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-price.html">
-                    <p>المحفظة</p>
-                    <i class="fa-regular fa-bookmark"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-person.html">
-                    <p>الطلبات</p>
-                    <i class="fa-solid fa-box-open"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-login.html">
-                    <p>تسجيل الخروج</p>
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                  </a>
-                </li>
-              </ul>
-            </button>
+            <form action="" class="form_2">
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <input type="search" name="" id="" placeholder="ما الذي تبحث عنه؟">
+            </form>
             <ul class="ul-perant">
               <li>
                 <a href="index-six.html">
@@ -125,7 +138,6 @@
                 >جمـيـع الملابـس<i class="fas fa-angle-double-left"></i
               ></a>
             </li>
-
             <li style="margin-top: 30px">
               <a href="index.html"
                 >جمـيـع المنتجات<i class="fa-solid fa-box-archive"></i
@@ -151,86 +163,90 @@
             <div class="order-filters-page">
               <form action="">
                 <div class="order-filters-search">
-                  <div class="mat-form-field-wrapper">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input
-                      type="search"
-                      formcontrolname="searchKey"
-                      id=""
-                      placeholder="البحث باستخدام رقم الهاتف"
-                    />
+                  <div class="order-filters-search_2">
+                    <div class="mat-form-field-wrapper">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input
+                        type="search"
+                        formcontrolname="searchKey"
+                        id=""
+                        placeholder="البحث باستخدام رقم الهاتف"
+                      />
+                    </div>
+                    <div class="mat-form-field-wrapper">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input
+                        type="search"
+                        formcontrolname="searchKey"
+                        id=""
+                        placeholder="البحث برقم الطلب"
+                      />
+                    </div>
                   </div>
-                  <div class="mat-form-field-wrapper">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input
-                      type="search"
-                      formcontrolname="searchKey"
-                      id=""
-                      placeholder="البحث باستخدام اسم العميل"
-                    />
+                  <div class="order-filters-search_3">
+                    <div class="mat-form-field-wrapper">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input
+                        type="search"
+                        formcontrolname="searchKey"
+                        id=""
+                        placeholder="البحث باستخدام اسم العميل"
+                      />
+                    </div>
+                    <div class="order-filters-row">
+                      <select
+                        class="order-info"
+                        name=""
+                        id=""
+                        aria-placeholder="حالة الطلب"
+                      >
+                        <option value="تم تأكيد الطلب">حالة الطلب</option>
+                        <option value="تم تأكيد الطلب">تم تأكيد الطلب</option>
+                        <option value="في انتظار شركة الشحن">
+                          في انتظار شركة الشحن
+                        </option>
+                        <option value="تأخير في الاوردر">تأخير في الاوردر</option>
+                        <option value="التوصيل قيد التقدم">
+                          التوصيل قيد التقدم
+                        </option>
+                        <option value="تم التوصيل">تم التوصيل</option>
+                        <option value="تم تعليق الطلب">تم تعليق الطلب</option>
+                        <option value="تم إلغاء الطلب">تم إلغاء الطلب</option>
+                        <option value="التاجر ألغى الطلب">التاجر ألغى الطلب</option>
+                        <option value="تم تعليق التوصيل ">تم تعليق التوصيل</option>
+                        <option value="الإسترجاع قيد التقدم">
+                          الإسترجاع قيد التقدم
+                        </option>
+                        <option value="تم الإسترجاع">تم الإسترجاع</option>
+                        <option value="الاستبدال قيد التقدم">
+                          الاستبدال قيد التقدم
+                        </option>
+                        <option value="تم الاستبدال">تم الاستبدال</option>
+                        <option value="الاستكمال قيد التنفيذ">
+                          الاستكمال قيد التنفيذ
+                        </option>
+                        <option value="تم الاستكمال">تم الاستكمال</option>
+                        <option value="الاسترجاع قيد التنفيذ">
+                          الاسترجاع قيد التنفيذ
+                        </option>
+                        <option value="تم الاسترجاع">تم الاسترجاع</option>
+                        <option value="في انتظار شركة الشحن">
+                          في انتظار شركة الشحن
+                        </option>
+                        <option value="التوصيل قيد التقدم">
+                          التوصيل قيد التقدم
+                        </option>
+                        <option value="تم التوصيل">تم التوصيل</option>
+                        <option value="تم قبول طلب الاستبدال">
+                          تم قبول طلب الاستبدال
+                        </option>
+                        <option value="تم استلام المنتج المرتجع">
+                          تم استلام المنتج المرتجع
+                        </option>
+                      </select>
+                    </div>
+                    <button type="submit">بحث</button>
                   </div>
-                  <div class="mat-form-field-wrapper">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input
-                      type="search"
-                      formcontrolname="searchKey"
-                      id=""
-                      placeholder="البحث برقم الطلب"
-                    />
-                  </div>
-                </div>
-                <div class="order-filters-row">
-                  <button type="submit">بحث</button>
-                  <select
-                    class="order-info"
-                    name=""
-                    id=""
-                    aria-placeholder="حالة الطلب"
-                  >
-                    <option value="تم تأكيد الطلب">حالة الطلب</option>
-                    <option value="تم تأكيد الطلب">تم تأكيد الطلب</option>
-                    <option value="في انتظار شركة الشحن">
-                      في انتظار شركة الشحن
-                    </option>
-                    <option value="تأخير في الاوردر">تأخير في الاوردر</option>
-                    <option value="التوصيل قيد التقدم">
-                      التوصيل قيد التقدم
-                    </option>
-                    <option value="تم التوصيل">تم التوصيل</option>
-                    <option value="تم تعليق الطلب">تم تعليق الطلب</option>
-                    <option value="تم إلغاء الطلب">تم إلغاء الطلب</option>
-                    <option value="التاجر ألغى الطلب">التاجر ألغى الطلب</option>
-                    <option value="تم تعليق التوصيل ">تم تعليق التوصيل</option>
-                    <option value="الإسترجاع قيد التقدم">
-                      الإسترجاع قيد التقدم
-                    </option>
-                    <option value="تم الإسترجاع">تم الإسترجاع</option>
-                    <option value="الاستبدال قيد التقدم">
-                      الاستبدال قيد التقدم
-                    </option>
-                    <option value="تم الاستبدال">تم الاستبدال</option>
-                    <option value="الاستكمال قيد التنفيذ">
-                      الاستكمال قيد التنفيذ
-                    </option>
-                    <option value="تم الاستكمال">تم الاستكمال</option>
-                    <option value="الاسترجاع قيد التنفيذ">
-                      الاسترجاع قيد التنفيذ
-                    </option>
-                    <option value="تم الاسترجاع">تم الاسترجاع</option>
-                    <option value="في انتظار شركة الشحن">
-                      في انتظار شركة الشحن
-                    </option>
-                    <option value="التوصيل قيد التقدم">
-                      التوصيل قيد التقدم
-                    </option>
-                    <option value="تم التوصيل">تم التوصيل</option>
-                    <option value="تم قبول طلب الاستبدال">
-                      تم قبول طلب الاستبدال
-                    </option>
-                    <option value="تم استلام المنتج المرتجع">
-                      تم استلام المنتج المرتجع
-                    </option>
-                  </select>
                 </div>
               </form>
             </div>
@@ -270,7 +286,42 @@
               <div class="order-praice">جنيه<span>150</span>: سعر الشراء</div>
               <div class="order-praice-sale">جنيه<span>50</span>: العمولة</div>
             </div>
-            <div class="select-info-order"></div>
+            <div class="select-info-order">
+              <div class="select-info-order-check color">
+                <input type="radio" name="مغلق" id="">
+              </div>
+              <div class="select-info-order-check color">
+                <input type="radio" name="مغلق" id="">
+              </div>
+              <div class="select-info-order-check">
+                <input type="radio" name="مغلق" id="">
+                <label for="">ملغي</label>
+              </div>
+              <div class="select-info-order-check">
+                <input type="radio" name="مغلق" id="">
+                <label for="">مرتجع</label>
+              </div>
+              <div class="select-info-order-check">
+                <input type="radio" name="مغلق" id="">
+                <label for="">تم التسليم</label>
+              </div>
+              <div class="select-info-order-check">
+                <input type="radio" name="مغلق" id="">
+                <label for="">تم بالشحن</label>
+              </div>
+              <div class="select-info-order-check">
+                <input type="radio" name="مغلق" id="">
+                <label for="">تم بالتجهيز</label>
+              </div>
+              <div class="select-info-order-check">
+                <input type="radio" name="مغلق" id="">
+                <label for="">تم بالتأكيد</label>
+              </div>
+              <div class="select-info-order-check">
+                <input type="radio" name="مغلق" id="">
+                <label for="">مغلق</label>
+              </div>
+            </div>
             <div class="order-action">
               <ul>
                 <li id="data-order">
@@ -300,13 +351,23 @@
                 <img src="assets/images/product_1.jpg" alt="" />
               </div>
               <div class="text">
-                <div class="product-name"><span></span>: أسـم المنتج</div>
+                <div class="product-name"><span> </span>: أسـم المنتج</div>
                 <div class="product-count"><span></span>: عـدد القطع</div>
                 <div class="product-price-text"><span>$50</span>: السعر</div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="card-7">
+        <ul class="pagination">
+          <li class="pagination-page"><a href="" class="page-link active">1</a></li>
+          <li class="pagination-page"><a href="" class="page-link">2</a></li>
+          <li class="pagination-page"><a href="" class="page-link">3</a></li>
+          <li class="pagination-page"><a href="" class="page-link">4</a></li>
+          <li class="pagination-page"><a href="" class="page-link">5</a></li>
+          <li class="pagination-page"><a href="" class="page-link">6</a></li>
+        </ul>
       </div>
     </section>
     <!-- End Page Person -->
@@ -354,6 +415,35 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <script>
+      let btnUp = document.querySelector(".ul-peranr-and-user-welcome");
+      let headerNav = document.querySelector("header nav");
+      let appNav = document.querySelector("header .app");
+
+      window.onscroll = function () {
+        if (window.scrollY >= 500) {
+          btnUp.style.visibility = "hidden";
+          appNav.style.visibility = "hidden";
+          headerNav.style.height = "60px";
+          appNav.style.height = "5px";
+        } else {
+          btnUp.style.visibility = "visible";
+          appNav.style.visibility = "visible";
+          headerNav.style.height = "100px";
+          appNav.style.height = "50px";
+        }
+      };
+    </script>
+
+    <script>
+      let order = document.getElementById("data-order");
+      let orderInof = document.querySelector(".person-info-data");
+
+      order.onclick = () => {
+        orderInof.classList.toggle("active");
+      };
+
+    </script>
 
     <script src="assets/js/main.js"></script>
   </body>

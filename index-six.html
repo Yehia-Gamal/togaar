@@ -7,7 +7,6 @@
     <title>Togaar - تجار</title>
     <link rel="icon" href="assets/images/icon-logo.ico" />
 
-
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
@@ -17,64 +16,77 @@
     <!-- Start Header -->
     <header>
       <div class="app">
-        <p>App is Aviable</p>
-        <a href="#"><img src="assets/images/google-play.png" alt="" /></a>
+        <div class="">
+          <p><a href="#"> ملاحظة الشحن<i class="fa-solid fa-file-lines"></i></a></p>
+          <p><a href="#">كورس ازاي تبدأ مع تجار <i class="fa-brands fa-youtube"></i></a></p>
+        </div>
+        <a href="#"><img src="assets/images/google-play.png"/><p>دلوقتي مع تطبيق تجار الجديد تقدر تستمتع بتجربة أسهل في أي وقت وأي مكان</p></a>
       </div>
       <div class="container">
         <nav>
           <ul class="icon-user">
             <li>
+              <button class="user-account">
+                <span>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <p class="user-welcome-text">
+                    <bdi dir="auto">Yehia Gamal</bdi>، اهلاً
+                  </p>
+                  <i class="fa-solid fa-user"></i>
+                </span>
+                <!-- sidbar -->
+                <ul class="sidebar-2">
+                  <li>
+                    <a href="index-account.html">
+                      <p>حسابي</p>
+                      <i class="fa-solid fa-user"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-price.html">
+                      <p>المحفظة</p>
+                      <i class="fa-regular fa-bookmark"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-person.html">
+                      <p>الطلبات</p>
+                      <i class="fa-solid fa-box-open"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-login.html">
+                      <p>تسجيل الخروج</p>
+                      <i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
+                  </li>
+                </ul>
+              </button>
+            </li>
+            <li>
               <span>0</span>
               <a href="index-cart.html"
                 ><i class="fa-solid fa-cart-shopping"></i
-              ></a>
-            </li>
+              >
+            </a>
+            <span>0</span>
+            <a href="index-catalog.html"
+              ><i class="fa-regular fa-heart"></i
+            ></a>
+            </li>            
             <li>
-              <span>0</span>
-              <a href="index-catalog.html"
-                ><i class="fa-regular fa-heart"></i
-              ></a>
+              <form action="">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="search" name="" id="" placeholder="ما الذي تبحث عنه؟">
+              </form>
             </li>
-            <li>
-              <a href="index.html"> <h2 class="icon">Togaar - تـجــار</h2></a></li>
+            <li><a href="index.html"> <h2 class="icon">Togaar - تـجــار</h2></a></li>
           </ul>
           <div class="ul-peranr-and-user-welcome">
-            <button class="user-account">
-              <span>
-                <i class="fa-solid fa-caret-down"></i>
-                <p class="user-welcome-text">
-                  <bdi dir="auto">Yehia Gamal</bdi>، اهلاً
-                </p>
-                <i class="fa-solid fa-user"></i>
-              </span>
-              <!-- sidbar -->
-              <ul class="sidebar-2">
-                <li>
-                  <a href="index-account.html">
-                    <p>حسابي</p>
-                    <i class="fa-solid fa-user"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-price.html">
-                    <p>المحفظة</p>
-                    <i class="fa-regular fa-bookmark"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-person.html">
-                    <p>الطلبات</p>
-                    <i class="fa-solid fa-box-open"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-login.html">
-                    <p>تسجيل الخروج</p>
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                  </a>
-                </li>
-              </ul>
-            </button>
+            <form action="" class="form_2">
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <input type="search" name="" id="" placeholder="ما الذي تبحث عنه؟">
+            </form>
             <ul class="ul-perant">
               <li>
                 <a href="index-six.html">
@@ -120,7 +132,6 @@
                 >جمـيـع الملابـس<i class="fas fa-angle-double-left"></i
               ></a>
             </li>
-
             <li style="margin-top: 30px">
               <a href="index.html"
                 >جمـيـع المنتجات<i class="fa-solid fa-box-archive"></i
@@ -225,7 +236,25 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <script>
+      let btnUp = document.querySelector(".ul-peranr-and-user-welcome");
+      let headerNav = document.querySelector("header nav");
+      let appNav = document.querySelector("header .app");
 
+      window.onscroll = function () {
+        if (window.scrollY >= 500) {
+          btnUp.style.visibility = "hidden";
+          appNav.style.visibility = "hidden";
+          headerNav.style.height = "60px";
+          appNav.style.height = "5px";
+        } else {
+          btnUp.style.visibility = "visible";
+          appNav.style.visibility = "visible";
+          headerNav.style.height = "100px";
+          appNav.style.height = "50px";
+        }
+      };
+    </script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

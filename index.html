@@ -22,63 +22,77 @@
     <!-- Start Header -->
     <header>
       <div class="app">
-        <p>App is Aviable</p>
-        <a href="#"><img src="assets/images/google-play.png" alt="" /></a>
+        <div class="">
+          <p><a href="#"> ملاحظة الشحن<i class="fa-solid fa-file-lines"></i></a></p>
+          <p><a href="#">كورس ازاي تبدأ مع تجار <i class="fa-brands fa-youtube"></i></a></p>
+        </div>
+        <a href="#"><img src="assets/images/google-play.png"/><p>دلوقتي مع تطبيق تجار الجديد تقدر تستمتع بتجربة أسهل في أي وقت وأي مكان</p></a>
       </div>
       <div class="container">
         <nav>
           <ul class="icon-user">
             <li>
-              <span>0</span>
-              <a href="index-cart.html"
-                ><i class="fa-solid fa-cart-shopping"></i
-              ></a>
+              <button class="user-account">
+                <span>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <p class="user-welcome-text">
+                    <bdi dir="auto">Yehia Gamal</bdi>، اهلاً
+                  </p>
+                  <i class="fa-solid fa-user"></i>
+                </span>
+                <!-- sidbar -->
+                <ul class="sidebar-2">
+                  <li>
+                    <a href="index-account.html">
+                      <p>حسابي</p>
+                      <i class="fa-solid fa-user"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-price.html">
+                      <p>المحفظة</p>
+                      <i class="fa-regular fa-bookmark"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-person.html">
+                      <p>الطلبات</p>
+                      <i class="fa-solid fa-box-open"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-login.html">
+                      <p>تسجيل الخروج</p>
+                      <i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
+                  </li>
+                </ul>
+              </button>
             </li>
             <li>
               <span>0</span>
-              <a href="index-catalog.html"
-                ><i class="fa-regular fa-heart"></i
-              ></a>
+              <a href="index-cart.html"
+                ><i class="fa-solid fa-cart-shopping"></i
+              >
+            </a>
+            <span>0</span>
+            <a href="index-catalog.html"
+              ><i class="fa-regular fa-heart"></i
+            ></a>
+            </li>            
+            <li>
+              <form action="">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="search" name="" id="" placeholder="ما الذي تبحث عنه؟">
+              </form>
             </li>
             <li><a href="index.html"> <h2 class="icon">Togaar - تـجــار</h2></a></li>
           </ul>
           <div class="ul-peranr-and-user-welcome">
-            <button class="user-account">
-              <span>
-                <i class="fa-solid fa-caret-down"></i>
-                <p class="user-welcome-text">
-                  <bdi dir="auto">Yehia Gamal</bdi>، اهلاً
-                </p>
-                <i class="fa-solid fa-user"></i>
-              </span>
-              <!-- sidbar -->
-              <ul class="sidebar-2">
-                <li>
-                  <a href="index-account.html">
-                    <p>حسابي</p>
-                    <i class="fa-solid fa-user"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-price.html">
-                    <p>المحفظة</p>
-                    <i class="fa-regular fa-bookmark"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-person.html">
-                    <p>الطلبات</p>
-                    <i class="fa-solid fa-box-open"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-login.html">
-                    <p>تسجيل الخروج</p>
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                  </a>
-                </li>
-              </ul>
-            </button>
+            <form action="" class="form_2">
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <input type="search" name="" id="" placeholder="ما الذي تبحث عنه؟">
+            </form>
             <ul class="ul-perant">
               <li>
                 <a href="index-six.html">
@@ -180,7 +194,7 @@
     <!-- End Swiper Navigation -->
 
     <!-- Start Product-Swiper-One -->
-    <section class="product-swiper-one">
+    <section class="product-swiper-one home">
       <div class="swiper mySwiper container">
         <div class="category-header">
           <div class="view-all">عرض الكل</div>
@@ -207,7 +221,65 @@
                   </div>
                 </div>
                 <div class="product-add">
+                  <i id="hert" class="fa-solid fa-heart Hert color-btn"></i>
+                  <button class="btn">
+                    <span>اضـف الي العربة</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="img"><a href="index-seven.html" class="product-title" target="_blank">
+                <img
+                  src="assets/images/product_1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="product-info">
+                <h3>عرض 3 بنطلون ميلتون صيفى</h3></a>
+                <div class="product-price">
+                  <div class="product-profit">
+                    <div class=""><span>الربح:</span>35</div>
+                  </div>
+                  <div class="data-price">
+                    <div class="price-text">جنيه مصري</div>
+                    <div class="only-price">300</div>
+                  </div>
+                </div>
+                <div class="product-add">
                   <i id="hert" class="fa-regular fa-heart Hert"></i>
+                  <button class="btn">
+                    <span>اضـف الي العربة</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="img"><a href="index-seven.html" class="product-title" target="_blank">
+                <img
+                  src="assets/images/product_1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="product-info">
+                <h3>عرض 3 بنطلون ميلتون صيفى</h3></a>
+                <div class="product-price">
+                  <div class="product-profit">
+                    <div class=""><span>الربح:</span>35</div>
+                  </div>
+                  <div class="data-price">
+                    <div class="price-text">جنيه مصري</div>
+                    <div class="only-price">300</div>
+                  </div>
+                </div>
+                <div class="product-add">
+                  <i id="hert" class="fa-solid fa-heart Hert color-btn"></i>
                   <button class="btn">
                     <span>اضـف الي العربة</span>
                     <i class="fa-solid fa-cart-plus"></i>
@@ -439,65 +511,7 @@
                   </div>
                 </div>
                 <div class="product-add">
-                  <i id="hert" class="fa-regular fa-heart Hert"></i>
-                  <button class="btn">
-                    <span>اضـف الي العربة</span>
-                    <i class="fa-solid fa-cart-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide card">
-            <div class="card-content">
-              <div class="img"><a href="index-seven.html" class="product-title" target="_blank">
-                <img
-                  src="assets/images/product_1.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="product-info">
-                <h3>عرض 3 بنطلون ميلتون صيفى</h3></a>
-                <div class="product-price">
-                  <div class="product-profit">
-                    <div class=""><span>الربح:</span>35</div>
-                  </div>
-                  <div class="data-price">
-                    <div class="price-text">جنيه مصري</div>
-                    <div class="only-price">300</div>
-                  </div>
-                </div>
-                <div class="product-add">
-                  <i id="hert" class="fa-regular fa-heart Hert"></i>
-                  <button class="btn">
-                    <span>اضـف الي العربة</span>
-                    <i class="fa-solid fa-cart-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide card">
-            <div class="card-content">
-              <div class="img"><a href="index-seven.html" class="product-title" target="_blank">
-                <img
-                  src="assets/images/product_1.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="product-info">
-                <h3>عرض 3 بنطلون ميلتون صيفى</h3></a>
-                <div class="product-price">
-                  <div class="product-profit">
-                    <div class=""><span>الربح:</span>35</div>
-                  </div>
-                  <div class="data-price">
-                    <div class="price-text">جنيه مصري</div>
-                    <div class="only-price">300</div>
-                  </div>
-                </div>
-                <div class="product-add">
-                  <i id="hert" class="fa-regular fa-heart Hert"></i>
+                  <i id="hert" class="fa-solid fa-heart Hert color-btn"></i>
                   <button class="btn">
                     <span>اضـف الي العربة</span>
                     <i class="fa-solid fa-cart-plus"></i>
@@ -600,7 +614,7 @@
                   </div>
                 </div>
                 <div class="product-add">
-                  <i id="hert" class="fa-regular fa-heart Hert"></i>
+                  <i id="hert" class="fa-solid fa-heart Hert color-btn"></i>
                   <button class="btn">
                     <span>اضـف الي العربة</span>
                     <i class="fa-solid fa-cart-plus"></i>
@@ -658,7 +672,7 @@
                   </div>
                 </div>
                 <div class="product-add">
-                  <i id="hert" class="fa-regular fa-heart Hert"></i>
+                  <i id="hert" class="fa-solid fa-heart Hert color-btn"></i>
                   <button class="btn">
                     <span>اضـف الي العربة</span>
                     <i class="fa-solid fa-cart-plus"></i>
@@ -2406,10 +2420,42 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <script>
+      let btnUp = document.querySelector(".ul-peranr-and-user-welcome");
+      let headerNav = document.querySelector("header nav");
+      let appNav = document.querySelector("header .app");
+
+      window.onscroll = function () {
+        if (window.scrollY >= 500) {
+          btnUp.style.visibility = "hidden";
+          appNav.style.visibility = "hidden";
+          headerNav.style.height = "60px";
+          appNav.style.height = "5px";
+        } else {
+          btnUp.style.visibility = "visible";
+          appNav.style.visibility = "visible";
+          headerNav.style.height = "100px";
+          appNav.style.height = "50px";
+        }
+      };
+    </script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+
+    <script>
+      let counter = 1;
+      setInterval(function () {
+      document.getElementById("radio" + counter).checked = true;
+      counter++;
+      if (counter > 3) {
+        counter = 1;
+        }
+      }, 3000);
+    </script>
+
+    <script src="assets/js/main_2.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

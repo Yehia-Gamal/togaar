@@ -7,7 +7,6 @@
     <title>Togaar - تجار</title>
     <link rel="icon" href="assets/images/icon-logo.ico" />
 
-
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
@@ -50,17 +49,18 @@
           height: 300px;
         }
       }
-
-      .mySwiper {
-        height: 20%;
-        box-sizing: border-box;
-        padding: 10px 0;
+  
+      @media (max-width: 400px) {
+        .mySwiper2 {
+          height: 300px;
+          width: 90%;
+        }
       }
 
-      .mySwiper .swiper-slide {
-        width: 25%;
-        height: 100%;
-        opacity: 0.4;
+      .mySwiper {
+        height: 25%;
+        box-sizing: border-box;
+        padding: 10px 0;
       }
 
       .mySwiper .swiper-slide-thumb-active {
@@ -74,9 +74,41 @@
         height: 100%;
         object-fit: cover;
       }
+
+      .mySwiper .swiper-slide {
+        width: 25% !important;
+        height: 100%;
+        opacity: 0.7;
+      }
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+        border: 1px solid var(--main-color);
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
       .swiper-button-next,
       .swiper-button-prev {
         color: var(--main-color-alt) !important;
+      }
+      .swiper-button-prev {
+        left: -40px;
+      }
+      .swiper-button-next {
+        right: -40px;
+      }
+      @media (max-width: 400px) {
+        .swiper-button-prev {
+        left: -10px;
+      }
+      .swiper-button-next {
+        right: -10px;
+      }
       }
     </style>
   </head>
@@ -85,64 +117,104 @@
     <!-- Start Header -->
     <header>
       <div class="app">
-        <p>App is Aviable</p>
-        <a href="#"><img src="assets/images/google-play.png" alt="" /></a>
+        <div class="">
+          <p>
+            <a href="#"> ملاحظة الشحن<i class="fa-solid fa-file-lines"></i></a>
+          </p>
+          <p>
+            <a href="#"
+              >كورس ازاي تبدأ مع تجار <i class="fa-brands fa-youtube"></i
+            ></a>
+          </p>
+        </div>
+        <a href="#"
+          ><img src="assets/images/google-play.png" />
+          <p>
+            دلوقتي مع تطبيق تجار الجديد تقدر تستمتع بتجربة أسهل في أي وقت وأي
+            مكان
+          </p></a
+        >
       </div>
       <div class="container">
         <nav>
           <ul class="icon-user">
             <li>
-              <span>0</span>
-              <a href="index-cart.html"
-                ><i class="fa-solid fa-cart-shopping"></i
-              ></a>
+              <button class="user-account">
+                <span>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <p class="user-welcome-text">
+                    <bdi dir="auto">Yehia Gamal</bdi>، اهلاً
+                  </p>
+                  <i class="fa-solid fa-user"></i>
+                </span>
+                <!-- sidbar -->
+                <ul class="sidebar-2">
+                  <li>
+                    <a href="index-account.html">
+                      <p>حسابي</p>
+                      <i class="fa-solid fa-user"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-price.html">
+                      <p>المحفظة</p>
+                      <i class="fa-regular fa-bookmark"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-person.html">
+                      <p>الطلبات</p>
+                      <i class="fa-solid fa-box-open"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-login.html">
+                      <p>تسجيل الخروج</p>
+                      <i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
+                  </li>
+                </ul>
+              </button>
             </li>
             <li>
+              <span>0</span>
+              <a href="index-cart.html"
+                ><i class="fa-solid fa-cart-shopping"></i>
+              </a>
               <span>0</span>
               <a href="index-catalog.html"
                 ><i class="fa-regular fa-heart"></i
               ></a>
             </li>
             <li>
-              <a href="index.html"> <h2 class="icon">Togaar - تـجــار</h2></a></li>
+              <form action="">
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input
+                  type="search"
+                  name=""
+                  id=""
+                  placeholder="ما الذي تبحث عنه؟"
+                />
+              </form>
+            </li>
+            <li>
+              <a href="index.html"> <h2 class="icon">Togaar - تـجــار</h2></a>
+            </li>
           </ul>
           <div class="ul-peranr-and-user-welcome">
-            <button class="user-account">
-              <span>
-                <i class="fa-solid fa-caret-down"></i>
-                <p class="user-welcome-text">
-                  <bdi dir="auto">Yehia Gamal</bdi>، اهلاً
-                </p>
-                <i class="fa-solid fa-user"></i>
-              </span>
-              <!-- sidbar -->
-              <ul class="sidebar-2">
-                <li>
-                  <a href="index-account.html">
-                    <p>حسابي</p>
-                    <i class="fa-solid fa-user"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-price.html">
-                    <p>المحفظة</p>
-                    <i class="fa-regular fa-bookmark"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-person.html">
-                    <p>الطلبات</p>
-                    <i class="fa-solid fa-box-open"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-login.html">
-                    <p>تسجيل الخروج</p>
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                  </a>
-                </li>
-              </ul>
-            </button>
+            <form action="" class="form_2">
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input
+                type="search"
+                name=""
+                id=""
+                placeholder="ما الذي تبحث عنه؟"
+              />
+            </form>
             <ul class="ul-perant">
               <li>
                 <a href="index-six.html">
@@ -188,7 +260,6 @@
                 >جمـيـع الملابـس<i class="fas fa-angle-double-left"></i
               ></a>
             </li>
-
             <li style="margin-top: 30px">
               <a href="index.html"
                 >جمـيـع المنتجات<i class="fa-solid fa-box-archive"></i
@@ -255,8 +326,6 @@
                   <img src="assets/images/product_8.jpg" />
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
             </div>
             <div thumbsSlider="" class="swiper mySwiper">
               <div class="swiper-wrapper">
@@ -286,6 +355,8 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
             <button class="download-button">
               تحميل جميع صور المنتج الي جهازك
             </button>
@@ -311,6 +382,22 @@
                 <button>L</button>
                 <button>XL</button>
                 <button>XXL</button>
+              </div>
+              <div class="colors">
+                <p>: الالوان</p>
+                <button style="background-color: red"></button>
+                <button style="background-color: yellow"></button>
+                <button style="background-color: green"></button>
+                <button
+                  style="background-color: white; border: 1px solid"
+                ></button>
+                <button style="background-color: black"></button>
+                <button style="background-color: blue"></button>
+                <button style="background-color: blueviolet"></button>
+                <button style="background-color: orangered"></button>
+                <button style="background-color: orange"></button>
+                <button style="background-color: grey"></button>
+                <button style="background-color: paleturquoise"></button>
               </div>
               <hr class="hr" />
               <p class="product-availability">
@@ -361,7 +448,7 @@
           <div class="additionalInfoContainer">
             <div class="tabGroup__additionalInfo">
               <button
-                class="tabItem tab__productDescription tabItem--selected ng-star-inserted"
+                class="tabItem tab__productDescription active tabItem--selected ng-star-inserted"
               >
                 شرح المنتج
               </button>
@@ -372,12 +459,20 @@
               </button>
             </div>
             <div class="displayedAdditionalInfoContainer">
-              <ul class="productDescription">
+              <ul class="productDescription active">
                 <li class="ng-star-inserted">
                   عرض الصيف والمصيف 😍، البس براحتك و اتشيك مع عرض 3 تيشيرت صيفى
                   Vintage + عرض 3 بنطلون ميلتون صيفى ، جمعنا لك اكتر من قطعه
                   عشان نوفر لك و نسهل عليك، 6 قطع في عرض واحد بسعر ميتعوضش 😉💕
                 </li>
+              </ul>
+              <ul class="productDescription-2">
+                <li>
+                  - البنطلون خامة بنجالين مضلع عالي الجودة و مريح على جسمك
+                </li>
+                <li>- عملي ومش هيضايقك في اللبس</li>
+                <li>- طقم من 4 الوان بيزك يعني مش هتحتار</li>
+                <li>- ستايل موضته مش بتقدم</li>
               </ul>
             </div>
           </div>
@@ -453,6 +548,46 @@
       });
     </script>
 
+    <script>
+      let productDes = document.querySelector(".tab__productDescription");
+      let productDes_2 = document.querySelector(".tab__productSpecifications");
+      let productDesInfo = document.querySelector(".productDescription");
+      let productDesInfo_2 = document.querySelector(".productDescription-2");
+
+      productDes_2.onclick = () => {
+        productDesInfo.classList.remove("active");
+        productDesInfo_2.classList.add("active");
+        productDes_2.classList.add("active");
+        productDes.classList.remove("active");
+      };
+
+      productDes.onclick = () => {
+        productDesInfo_2.classList.remove("active");
+        productDesInfo.classList.add("active");
+        productDes_2.classList.remove("active");
+        productDes.classList.add("active");
+      };
+    </script>
+
+    <script>
+      let btnUp = document.querySelector(".ul-peranr-and-user-welcome");
+      let headerNav = document.querySelector("header nav");
+      let appNav = document.querySelector("header .app");
+
+      window.onscroll = function () {
+        if (window.scrollY >= 500) {
+          btnUp.style.visibility = "hidden";
+          appNav.style.visibility = "hidden";
+          headerNav.style.height = "60px";
+          appNav.style.height = "5px";
+        } else {
+          btnUp.style.visibility = "visible";
+          appNav.style.visibility = "visible";
+          headerNav.style.height = "100px";
+          appNav.style.height = "50px";
+        }
+      };
+    </script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
