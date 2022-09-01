@@ -11,12 +11,8 @@
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
   </head>
+
   <body>
     <!-- Start Header -->
     <header>
@@ -179,96 +175,184 @@
       </div>
     </header>
     <!-- End Header -->
-    <section class="catalog">
-      <div class="container">
-        <div class="catalog-perant">
-          <div class="title-catalog-page">
-            <p>كتالوج المنتجات</p>
-            <span>(1 منتج)</span>
+
+    <section class="product-catalog">
+      <div class="catalog-perant">
+        <div class="container">
+          <div class="header-title-catalog">
+            <i class="fas fa-angle-right"></i>
           </div>
-          <div class="catalog-section">
-            <div class="catalog-section-header">
-              <div class="text">
-                <div class="select-all">
-                  <div class="remove">
-                    <button class="remove-select">حذف المحدد</button>
+          <div class="catalog-card">
+            <div class="catalog-side">
+              <div class="left-header">
+                <p class="left-header-text">ملخص الطلب</p>
+              </div>
+              <div class="table-element">
+                <div class="product-info-side">
+                  <div class="img-catalog-side">
+                    <img src="assets/images/product_1.jpg" alt="" />
                   </div>
-                  <label for="select">اختر الكل</label>
-                  <input type="checkbox" name="" id="select" />
+                </div>
+                <div class="product-name-side">
+                  <p class="name-side-product">عرض 3 بنطلون ميلتون صيفى</p>
+                  <p class="count-name">
+                    <span class="count">x</span>
+                    : الكمية
+                  </p>
+                  <div class="product-variants"></div>
                 </div>
               </div>
+              <div class="price-info-side-catalog">
+                <p class="prod-price">
+                  <span class="price-text"> جنيه مصري </span>
+                </p>
+                <p class="prod-profit">
+                  <span class="profit-text">الربح</span>30
+                </p>
+              </div>
+              <p class="cart-text">
+                <span class="products"
+                  ><span>سعر المنتجات</span
+                  ><span class="profit-text">(0)</span></span
+                ><span class="price">0 جنيه مصري</span>
+              </p>
+              <p class="cart-text">
+                <span>الربح الخاص بك</span>
+                <span class="profit-text"> جنيه مصري </span>
+              </p>
+              <p class="cart-text delivery">
+                <span>سعر الشحن</span>
+                <span>0 جنيه مصري</span>
+              </p>
+              <p class="delivery ng-star-inserted"></p>
+              <div class="total-cost">
+                <span>المستحق للدفع</span>
+                <span>0 جنيه مصري</span>
+              </div>
+              <button type="submit" class="btn mat-raised-button order-btn">
+                ارسال الطلب
+              </button>
             </div>
-            <div class="table">
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col"></th>
-                    <th scope="col">توافر المنتج</th>
-                    <th scope="col">الربح</th>
-                    <th scope="col" class="th-price">السعر</th>
-                    <th scope="col" style="text-align: right">المنتج</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="add-to-car-catalog">
-                        <button>
-                          اضف الي العربة <i class="fa-solid fa-cart-plus"></i>
-                        </button>
-                        <button><a href="index-product-catalog.html">أطلب ألان</a></button>
-                      </div>
-                    </td>
-
-                    <td>
-                      <p class="p-catalog-avil">متوفر</p>
-                    </td>
-
-                    <td>
-                      <p class="product-profit-p">35</p>
-                    </td>
-
-                    <td>
-                      <div class="catalog-price-product">
-                        <button><i class="fa-solid fa-pen"></i></button>
-                        <p class="product-price-p">300</p>
-                      </div>
-                    </td>
-
-                    <td>
-                      <div class="img-and-name-catalog">
-                        <div class="name-and-category">
-                          <a href="#"
-                            ><p>عرض 3 بنطلون ميلتون صيفى</p>
-                            <p class="product-original-price">
-                              السعر الاصلي <span>جنيه مصري 300</span>
-                            </p>
-                            <p class="product-variants">
-                              <span class="size-variant">المقاس: XL</span>
-                            </p>
-                          </a>
-                        </div>
-                        <a href="#"
-                          ><img src="assets/images/product_1.jpg" alt=""
-                        /></a>
-                      </div>
-                    </td>
-
-                    <td>
-                      <div class="product-actions-catalog">
-                        <input type="checkbox" name="" id="" />
-                        <button>X</button>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="catalog-info-product">
+              <form action="">
+                <h3 class="headers-title">البيانات الشخصية</h3>
+                <div class="perant-input">
+                  <label for="">الإسم بالكامل</label>
+                  <input type="text" />
+                </div>
+                <div class="perant-input-row">
+                  <div class="perant-input">
+                    <label for=""
+                      >رقم المحمول
+                      <span class="note">(بالحروف الانجليزية)</span></label
+                    >
+                    <input type="text" />
+                  </div>
+                  <div class="perant-input">
+                    <label for=""
+                      >الرقم البديل<span class="note"
+                        >(بالحروف الانجليزية)</span
+                      >
+                      <span class="optional">(اختياري)</span></label
+                    >
+                    <input type="text" />
+                  </div>
+                </div>
+                <h3 class="headers-title">بيانات الشحن</h3>
+                <div class="perant-input">
+                  <label for="">المحافظة</label>
+                  <div class="c-btn">
+                    <span class="ng-star-inserted">اختر المحافظة</span>
+                  </div>
+                  <div class="arrow-up"></div>
+                  <div class="list-area" style="display: none">
+                    <div class="ng-star-inserted">
+                      <ul class="lazyContainer">
+                        <li class="pure-checkbox ng-star-inserted">بور سعيد</li>
+                        <li class="pure-checkbox ng-star-inserted">الغربية</li>
+                        <li class="pure-checkbox ng-star-inserted">الدقهلية</li>
+                        <li class="pure-checkbox ng-star-inserted">البحيرة</li>
+                        <li class="pure-checkbox ng-star-inserted">الشرقية</li>
+                        <li class="pure-checkbox ng-star-inserted">
+                          كفر الشيخ
+                        </li>
+                        <li class="pure-checkbox ng-star-inserted">بني سويف</li>
+                        <li class="pure-checkbox ng-star-inserted">سوهاج</li>
+                        <li class="pure-checkbox ng-star-inserted">ألاقصر</li>
+                        <li class="pure-checkbox ng-star-inserted">القاهرة</li>
+                        <li class="pure-checkbox ng-star-inserted">الجيزة</li>
+                        <li class="pure-checkbox ng-star-inserted">
+                          الاسكندرية
+                        </li>
+                        <li class="pure-checkbox ng-star-inserted">
+                          الاسماعيلية
+                        </li>
+                        <li class="pure-checkbox ng-star-inserted">السويس</li>
+                        <li class="pure-checkbox ng-star-inserted">
+                          القليوبية
+                        </li>
+                        <li class="pure-checkbox ng-star-inserted">الفيوم</li>
+                        <li class="pure-checkbox ng-star-inserted">دمياط</li>
+                        <li class="pure-checkbox ng-star-inserted">المنوفية</li>
+                        <li class="pure-checkbox ng-star-inserted">أسيوط</li>
+                        <li class="pure-checkbox ng-star-inserted">قنا</li>
+                        <li class="pure-checkbox ng-star-inserted">أسوان</li>
+                        <li class="pure-checkbox ng-star-inserted">مطروح</li>
+                        <li class="pure-checkbox ng-star-inserted">
+                          البحر الاحمر / الغردقة
+                        </li>
+                        <li class="pure-checkbox ng-star-inserted">المنيا</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="perant-input">
+                  <label for=""
+                    >العنوان بالتفصيل
+                    <span class="note"
+                      >(المنطقة, اسم الشارع, رقم العقار , رقم الشقة)</span
+                    ></label
+                  >
+                  <input type="text" />
+                </div>
+                <div class="perant-input-row">
+                  <div class="perant-input">
+                    <label for="">الكمية</label>
+                    <input type="number" placeholder="الكمية" />
+                  </div>
+                  <div class="perant-input">
+                    <label for="">سعر بيع القطعة</label>
+                    <input type="number" placeholder="سعر بيع القطعة" />
+                  </div>
+                </div>
+                <div class="perant-input">
+                  <label for=""
+                    >اسم صفحتك الي بتبيع منها على الفيسبوك
+                    <span class="optional">(اختياري)</span></label
+                  >
+                  <input type="text" />
+                </div>
+                <div class="perant-input">
+                  <label for=""
+                    >لينك الصفحة <span class="optional">(اختياري)</span></label
+                  >
+                  <input type="text" />
+                </div>
+                <div class="perant-input">
+                  <label for=""
+                    >ملاحظات <span class="optional">(اختياري)</span></label
+                  >
+                  <textarea
+                    class="form-control textarea ng-pristine ng-valid ng-touched"
+                  ></textarea>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Start Footer -->
     <footer>
       <div class="container">
@@ -314,6 +398,13 @@
     <!-- End Footer -->
 
     <!-- JavaScript File -->
+    <script>
+      let back = document.querySelector(".header-title-catalog");
+      back.onclick = () => {
+        history.back();
+      };
+    </script>
+
     <script>
       let btnUp = document.querySelector(".ul-peranr-and-user-welcome");
       let headerNav = document.querySelector("header nav");
